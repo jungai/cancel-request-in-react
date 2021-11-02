@@ -13,7 +13,7 @@ use [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortCont
 
 **fetch**
 
-adding `single` opts in fetch
+adding `signal` opts in fetch
 
 ```typescript
 const rawData = await fetch("https://jsonplaceholder.typicode.com/todos/", {
@@ -24,7 +24,7 @@ const data = await rawData.json();
 
 **axios**
 
-adding `single` opts in fetch
+adding `signal` opts in fetch
 
 ```typescript
 const data = await axios.get("https://jsonplaceholder.typicode.com/todos", {
