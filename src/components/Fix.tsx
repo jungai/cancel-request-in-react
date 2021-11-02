@@ -11,7 +11,7 @@ function Fix() {
     (async () => {
       setIsLoading(true);
       setTimeout(async () => {
-        // ----- node fetch ------
+        // ----- fetch ------
         // const rawData = await fetch(
         //   "https://jsonplaceholder.typicode.com/todos/",
         //   { signal: controller.signal }
