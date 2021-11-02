@@ -24,7 +24,7 @@ const data = await rawData.json();
 
 **axios**
 
-adding `signal` opts in fetch
+adding `signal` opts in axios
 
 ```typescript
 const data = await axios.get("https://jsonplaceholder.typicode.com/todos", {
