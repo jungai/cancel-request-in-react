@@ -11,7 +11,7 @@ use [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortCont
 
 ## Testing on http client lib and standard node-fetch
 
-`fetch` request can been canceled
+**fetch**
 
 adding `single` opts in fetch
 
@@ -22,7 +22,7 @@ const rawData = await fetch("https://jsonplaceholder.typicode.com/todos/", {
 const data = await rawData.json();
 ```
 
-`axios` request can been canceled
+**axios**
 
 adding `single` opts in fetch
 
@@ -32,7 +32,7 @@ const data = await axios.get("https://jsonplaceholder.typicode.com/todos", {
 });
 ```
 
-`ky` might be a bug ??
+**ky** might be a bug ??
 
 refs
 
