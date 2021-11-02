@@ -20,7 +20,12 @@ function Fix() {
 
         // ----- ky ------
         const data = await ky
-          .get("https://jsonplaceholder.typicode.com/todos")
+          .get("https://jsonplaceholder.typicode.com/todos", {
+            signal: controller.signal,
+            retry: {
+              limit: 0,
+            },
+          })
           .json();
 
         // ----- axios ------
