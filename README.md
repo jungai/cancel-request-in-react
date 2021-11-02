@@ -9,7 +9,7 @@ in main page (app.tsx) try to switch component `test` and `fix`
 
 use [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController)(browser support) for cannel request
 
-## Testing on http client lib and standard node-fetch
+## Testing on http client lib and normal fetch(browser)
 
 **fetch**
 
