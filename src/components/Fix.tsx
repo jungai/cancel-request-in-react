@@ -6,24 +6,24 @@ function Fix() {
   const [data, setData] = useState<any>([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  // install
-  const controller = new AbortController();
-  const client = ky.extend({ signal: controller.signal });
-
   useEffect(() => {
+    const controller = new AbortController();
     (async () => {
       setIsLoading(true);
       setTimeout(async () => {
+        // ----- node fetch ------
         // const rawData = await fetch(
         //   "https://jsonplaceholder.typicode.com/todos/",
         //   { signal: controller.signal }
         // );
         // const data = await rawData.json();
 
-        const data = await client
+        // ----- ky ------
+        const data = await ky
           .get("https://jsonplaceholder.typicode.com/todos")
           .json();
 
+        // ----- axios ------
         // const data = await axios.get(
         //   "https://jsonplaceholder.typicode.com/todos",
         //   { signal: controller.signal }
