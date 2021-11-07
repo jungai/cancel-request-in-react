@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Fix from "./components/Fix";
-import Test from "./components/Test";
+import WithAbort from "./components/WithAbort";
+import WithOutAbort from "./components/WithOutAbort";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +11,8 @@ function App() {
         {isOpen ? "open" : "close"}
       </button>
       <hr />
-      {/* {isOpen && <Test />} */}
-      {isOpen && <Fix />}
+      {isOpen && <WithOutAbort />}
+      {/* {isOpen && <WithAbort />} */}
     </div>
   );
 }
