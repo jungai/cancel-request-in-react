@@ -1,6 +1,8 @@
 # How to Cancel Request In React
 
-in main page (app.tsx) try to switch component `test` and `fix`
+[post here](https://dev.to/jungai/cancel-http-request-when-component-is-unmounted-4o8i)
+
+in main page (app.tsx) try to switch component `WithAbort` and `WithOutAbort`
 
 - `Test` component is not handle canceling request might be a error when component unmounted
 - `Fix` component is handle canceling request by using `AbortController` see below
